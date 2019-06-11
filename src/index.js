@@ -44,8 +44,8 @@ const reportWrapper = ({ popout }) => {
                 <div>
                     <div style={{ textAlign: "center" }}>
                         <img className="modal__image" src={error ? require("./assets/bug.svg") : require("./assets/inform.svg")} alt="" width="12%" height="12%"/>
-                        <h3 style={{ marginBottom: 0, color: "var(--text_primary)" }}>{error ? "Мы поймали ошибку!" : "Сообщить о баге"}</h3>
-                        <p style={{ marginTop: 0, marginBottom: 10, color: "var(--text_secondary)" }}>
+                        <h3 style={{ marginBottom: 0, color: "let(--text_primary)" }}>{error ? "Мы поймали ошибку!" : "Сообщить о баге"}</h3>
+                        <p style={{ marginTop: 0, marginBottom: 10, color: "let(--text_secondary)" }}>
                             {
                                 error
                                     ? "Помогите разработчикам её исправить"
@@ -67,7 +67,7 @@ const reportWrapper = ({ popout }) => {
                         {!isLoading ?
                             <Button size="xl" onClick={() => {
                                 setIsLoading(true);
-                                __sendReport({ product_id, error, message, platform }, closeReportPopout);
+                                return __sendReport({ product_id, error, message, platform }, closeReportPopout);
                             }}>
                                 Отправить
                             </Button>

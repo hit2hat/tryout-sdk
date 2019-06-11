@@ -1,0 +1,7 @@
+src/
+.npmignore
+.babelrc
+rollup.config.js
+.idea
+*.lock
+*.log

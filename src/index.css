@@ -41,7 +41,7 @@
     z-index: 1;
     top: 14px;
     right: 14px;
-    background: url("./assets/close.svg") no-repeat 50%/cover;
+    background: svg-load("./assets/close.svg") no-repeat 50%/cover;
     width: 24px;
     height: 24px
 }
