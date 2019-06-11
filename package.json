@@ -1,6 +1,6 @@
 {
   "name": "tryout-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TryOut SDK",
   "main": "index.js",
   "repository": "https://github.com/hit2hat/tryout-sdk",
