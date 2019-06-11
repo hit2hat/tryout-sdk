@@ -1,6 +1,6 @@
 {
   "name": "tryout-sdk",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "TryOut SDK",
   "main": "src/index.js",
   "repository": "https://github.com/hit2hat/tryout-sdk",
@@ -11,11 +11,11 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@vkontakte/vkui": "^2.21.5",
+    "postcss-inline-svg": "^3.1.1",
     "react": "^16.8.6",
     "rollup": "^1.15.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-svg-sprite": "^0.3.0",
     "rollup-plugin-uglify-es": "^0.0.1"
   },
   "scripts": {
