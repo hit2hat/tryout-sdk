@@ -1,0 +1,52 @@
+@keyframes up_modal {
+    from {
+        margin-bottom: -300px;
+    }
+    to {
+        margin-bottom: 0;
+    }
+}
+
+.modal {
+    animation: up_modal 0.3s;
+    background-color: var(--background_light);
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    border-radius: 12px 12px 0 0;
+    padding: 20px 20px;
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+    position: relative;
+    overflow: hidden;
+}
+
+.modal__header {
+    height: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.modal__title {
+    position: absolute;
+    color: var(--text_primary);
+    z-index: 1;
+    top: 14px;
+    left: 14px;
+    height: 24px;
+}
+
+.modal__close {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    right: 14px;
+    background: url("./assets/close.svg") no-repeat 50%/cover;
+    width: 24px;
+    height: 24px
+}
+
+.modal__image {
+    display: block;
+    margin: auto;
+}

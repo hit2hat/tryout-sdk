@@ -1,0 +1,14 @@
+{
+  "name": "tryout-sdk",
+  "version": "1.0.0",
+  "description": "TryOut SDK",
+  "main": "index.js",
+  "repository": "https://github.com/hit2hat/tryout-sdk",
+  "author": "hit2hat",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@vkontakte/vkui": "^2.21.5",
+    "react": "^16.8.6"
+  }
+}
