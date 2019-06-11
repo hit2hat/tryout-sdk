@@ -1,15 +1,23 @@
 {
   "name": "tryout-sdk",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "TryOut SDK",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/hit2hat/tryout-sdk",
   "author": "hit2hat",
   "license": "MIT",
   "private": false,
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "@vkontakte/vkui": "^2.21.5",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "rollup": "^1.15.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify-es": "^0.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c -o dist/sdk.js"
   }
 }
